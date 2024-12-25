@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Online Grocery Shopping and</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<link rel="icon" type="image/x-icon" href="image/logo.png">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs animate.css/4.1.1/animate.min.css"/>
+
+
+	
+	
+
+	<style type="text/css">
+		@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}	
+	@media screen and (max-width: 600px) {
+  .test{
+   overflow: scroll;
+  }
+}
+
+.img{
+	width: 120px;
+	height: 150px;
+	margin-top: -60px;
+	
+}
+
+.img1{
+	width: 120px;
+	height: 60px;
+	padding-top: 8px;
+	margin-bottom: -10px;
+}
+a{
+	text-decoration: none;
+	color: black;
+
+	
+}
+.img0{
+			width: 80%;
+			height: 220px;
+			margin-left: 20px;
+			padding-top: 20px;
+			
+		}
+
+	.button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid red;
+  width: 100%
+  border-radius: 4px;
+  
+ margin-top: 20px;
+  
+}
+
+.button:hover {
+  background-color: #f44336;
+  color: black;
+}
+.img2{
+			width: 80%;
+			height: 220px;
+			padding-top: 20px;
+			border-radius: 24px;
+
+			
+		}
+		.fotter1{
+			color:white;
+			font-size: 15px;
+			
+		}
+		a{
+			font-size: 14px;
+			text-decoration: none;
+			color: black;
+
+	
+		}
+
+
+.images-box{
+	border-radius: 10px;
+	overflow: hidden;
+}
+.images-box:hover{
+	scale:1.1;
+}
+.h6{
+	font-size: 14.5px;
+	color: #3A3534;
+	padding-left: 15px;
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+	
+    <!-- top header start -->
+      <div class="container">
+      <div class="row py-3" style="width: 90%; margin: auto;">
+      <div class="col-md-2"> <img src="image/logo2.jpg"  class="img">
+      </div>
+          <div class="col-md-4">
+          <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search for products,Brand and more"
+          aria-label="Search">
+          </form>
+          </div>
+
+ <!-- LOGINNNN MODALL  -->
+ <div class="col-2 mt-1">
+                <i class="fa-regular fa-circle-user"data-bs-toggle="modal" data-bs-target="#loginModal"></i><a href="#" class="" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                
+               
+
+            <!-- Login Modal -->
+            <div class="modal fade" id="loginModal" tabindex="1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        </div>
+                        <div class="modal-body">
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <label for="contactNumber" class="form-label">Email Address</label>
+               <input type="text" class="form-control" id="email Address" placeholder="Enter your email Address">
+                                </div>
+                            <div class="mb-3">
+                                    <label for="otp" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="pass" placeholder="Enter your Password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign up</button>
+                                <button type="submit" class="btn btn-secoundary"><a href="signup.html" class="btn-btn-primary"> Create Account</a></button>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+
+      <div class="col-2 mt-1 ps-2"> 
+	  <i class="fa-solid fa-cart-shopping fa-lg"></i>
+	  <a href="addcart.html	"><span class="ps-2"> Cart</span></a></div>
+
+	<div class="col-2 mt-1 mb-4"> 
+	  <i class="fa-solid fa-compass fa-lg"></i>
+	  <span class="ps-1"> Select Location</span></div>
+	</div>
+
+
+	  
+      
+      </b>
+      </div>
+      </div>
+      </div>
+
+
+
+      <!-- top header end-->
+<div class="container bg-light mt-3 pt-2">
+<div class="row ms-3 me-5">
+<div class="d-flex  justify-content-between test">
+<div class="col-1">
+<a href="#vegetable" class="animate__animated animate__zoomInDown">Vegetables</a>
+</div>
+<div class="col-1 ms-2">
+<a href="#tea" >Tea</a>
+</div>
+
+<div class="col-1 ms-2">
+<a href="#ghee">Ghee</a>
+</div>
+
+<div class="col-1">
+<a href="#milk">Milk</a>
+</div>
+
+
+<div class="col-1">
+<a href="#diaper">Baby Diaper</a>
+</div>
+
+
+<div class="col-1">
+<a href="#fruit">Fruits</a>
+</div>
+
+
+<div class=" col-1">
+<a href="#chocolate">Chocolates</a>
+</div>
+</b> 
+</div>
+</a>
+</b>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- image end################################## -->
+
+
+
+<!-- carousel1############################ -->
+<div class="container py-4">
+	<h2 class="py-3" id="vegetable">Vegetables</h2>
+	<a href="freshvegetable.html"><h4>View all→</h4></a>
+	<div class="row">
+
+		<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/v1.jpg" class="img0">
+ <p class="ms-3">fresho!</p>
+ <h6 class="card-title ms-2">Capsicum - Green (Loose)</h6><p class="card-text ms-3">
+ <strong>Rs56</strong>
+<del>76.71</del></p>
+</div>
+<button type="button" class="button">Buy Now</button>
+</div>
+</div>
+
+<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/v2.jpg" class="img0">
+ <p class="ms-3">fresho!</p>
+ <h6 class="card-title ms-2">Carrot - Orange (Loose)</h6><p class="card-text ms-3"><strong>Rs92</strong><del class="ms-1">126.23</del></p>
+</div>
+ <button type="button" class="button">Add me</button>
+</div>
+</div>
+
+		<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/v3.jpg" class="img0">
+ <p class="ms-3">fresho!</p>
+ <h6 class="card-title ms-2">Cauliflower</h6><p class="card-text ms-3"><strong>Rs46</strong>
+<del>61.01</del></p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+		<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/v4.jpg" class="img0">
+ <p class="ms-3">fresho!</p>
+ <h6 class="card-title ms-2">Coriander Leaves</h6><p class="card-text ms-3"><strong>Rs194</strong>
+<del>265.75</del>
+</p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- carousel 1 end################ -->
+
+<!-- fruit section -->
+<div class="container">
+		<h2 class="py-3" id="fruit">Fruits</h2>
+		<a href="fruit.html"><h4>View all→</h4></a>
+	<div class="row">
+
+		<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/fruit.jpg" class="img0">
+ <p class="ms-3">fresho!</p>
+ <h6 class="card-title ms-2">Strawberry</h6><p class="card-text ms-3"><strong>Rs218</strong><del class="ms-1">398</del></p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+		<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/fruit2.jpg" class="img0">
+ <p class="ms-3">fresho!</p>
+ <h6 class="card-title ms-2">Dragon Fruit (Loose)</h6>
+ <p class="card-text ms-3"><strong>Rs610</strong>
+<del class="ms-1">898</del></p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+		<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/fruit3.jpg" class="img0">
+ <p class="ms-3">fresho!</p>
+ <h6 class="card-title ms-2">Blueberry</h6>
+ <p class="card-text ms-3"><strong>Rs75</strong>
+</p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+		<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/fruit1.jpg" class="img0">
+ <p class="ms-3">fresho!</p>
+ <h6 class="card-title ms-2">Kiwi - Green</h6><p class="card-text ms-3"><strong>Rs250</strong>
+</p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- fruits section end ########### -->
+
+
+<!-- diaper sectionn start -->
+<div class="container">
+	<h2 class="py-3"id="diaper">Best Sellers</h2>
+	<a href="diaper.html"><h4>View all→</h4></a>
+	<div class="row">
+
+		<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/d1.jpg" class="img0">
+ <p class="ms-3">Littles</p>
+ <h6 class="card-title ms-2">Baby Wipes - With Aloe Vera, Jojoba Oil & Vitamin</h6><p class="card-text ms-3"><strong>Rs495</strong><del class="ms-1">950</del></p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+		<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/d2.jpg" class="img0">
+ <p class="ms-3">Bigbasket</p>
+ <h6 class="card-title ms-2">Baby Wipes - Fresh, No Paraben, Double</h6><p class="card-text ms-3"><strong>Rs218</strong>
+<del class="ms-1">398</del></p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+		<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/d3.jpg" class="img0">
+ <p class="ms-3">pampers</p>
+ <h6 class="card-title ms-2">Baby Wipes - With Aloe,Double Moisturising</h6><p class="card-text ms-3"><strong>Rs348.6</strong>
+<del>498</del></p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+		<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/d4.jpg" class="img0">
+ <p class="ms-3">Bigbasket</p>
+ <h6 class="card-title ms-2">Baby Wipes - Cherry Blossom, No Paraben, Double Moisturising
+</h6><p class="card-text ms-3"><strong>Rs109</strong>
+<del>199</del>
+</p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- tea section -->
+<div class="container">
+	<h2 class="py-3" id="tea">Tea</h2>
+	<a href="tea.html"><h4>View all→</h4></a>
+	<div class="row">
+
+		<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/tea1.jpg" class="img0">
+ <p class="ms-3">Tea!</p>
+ <h6 class="card-title ms-2">250gm Tea Packet Swachh tea</h6><p class="card-text ms-3"><strong>Rs170</strong>
+</p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/tea2.jpg" class="img0">
+ <p class="ms-3">Tea!</p>
+ <h6 class="card-title ms-2">150gm Gold Tea Packet </h6><p class="card-text ms-3"><strong>Rs110</strong></p>
+</div>
+ <button type="button" class="button">Add me</button>
+</div>
+</div>
+
+		<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/tea3.jpg" class="img0">
+ <p class="ms-3">Tea!</p>
+ <h6 class="card-title ms-2">150gm Premium Tea</h6><p class="card-text ms-3"><strong>Rs100</strong>
+</p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+		<div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/tea4.jpg" class="img0">
+ <p class="ms-3">Tea!</p>
+ <h6 class="card-title ms-2">150gm Taza premium tea </h6><p class="card-text ms-3"><strong>Rs170</strong>
+</p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Ghee section start -->
+<div class="container">
+  <h2 class="py-3" id="ghee">Ghee</h2>
+  <a href="ghee.html"><h4>View all→</h4></a>
+  <div class="row">
+
+    <div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/ghee1.jpg" class="img0">
+ <p class="ms-3">Auric</p>
+ <h6 class="card-title ms-2">Ghee</h6><p class="card-text ms-3"><strong>Rs1200</strong>
+<del>1302</del></p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+ <div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/ghee2.jpg" class="img0">
+ <p class="ms-3">Nandini</p>
+ <h6 class="card-title ms-2">Pure Ghee</h6><p class="card-text ms-3"><strong>Rs572</strong><del class="ms-1">630</del></p>
+</div>
+ <button type="button" class="button">Add me</button>
+</div>
+</div>
+
+    <div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/ghee3.jpg" class="img0">
+ <p class="ms-3">fresho!</p>
+ <h6 class="card-title ms-2">Pure Ghee/Tuppa</h6><p class="card-text ms-3"><strong>Rs149</strong>
+<del>170</del></p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+    <div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/ghee4.jpg" class="img0">
+ <p class="ms-3">GRB</p>
+ <h6 class="card-title ms-2">Ghee</h6><p class="card-text ms-3"><strong>Rs1608</strong>
+<del>1790</del>
+</p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ghee section end -->
+
+<!-- milkk section start -->
+<div class="container">
+  <h2 class="py-3" id="milk">Milk</h2>
+  <a href="milk.html"><h4>View all→</h4></a>
+  <div class="row">
+
+    <div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/milk1.jpg" class="img0">
+ <p class="ms-3">Nandani</p>
+ <h6 class="card-title ms-2">Good Life Milk</h6><p class="card-text ms-3"><strong>Rs156</strong>
+<del>176.71</del></p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+ <div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/milk2.jpg" class="img0">
+ <p class="ms-3">Amul Tazaa</p>
+ <h6 class="card-title ms-2">Amul Fresh Milk</h6><p class="card-text ms-3"><strong>Rs426</strong><del class="ms-1">444</del></p>
+</div>
+ <button type="button" class="button">Add me</button>
+</div>
+</div>
+
+    <div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/milk3.jpg" class="img0">
+ <p class="ms-3">Nandani</p>
+ <h6 class="card-title ms-2">Nandani Fresh Cow Milk</h6><p class="card-text ms-3"><strong>Rs146</strong>
+<del>190.01</del></p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+    <div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/milk4.jpg" class="img0">
+ <p class="ms-3">Nandani</p>
+ <h6 class="card-title ms-2">Goodlife Slim Skimmed Milk</h6>
+ <p class="card-text ms-3"><strong>Rs620</strong>
+<del>650</del>
+</p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- milk section end -->
+
+<!-- chocolates section start -->
+
+<div class="container">
+  <h2 id="chocolate">Chocolates</h2>
+  <a href="chocolate.html"><h4>View all→</h4></a>
+  <div class="row">
+
+    <div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/c1.jpg" class="img0">
+ <p class="ms-3">Kitkat</p>
+ <h6 class="card-title ms-2">Chocolate Covered Wafer</h6><p class="card-text ms-3"><strong>Rs283</strong>
+<del>298</del></p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+ <div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/c2.jpg" class="img0">
+ <p class="ms-3">Cadbury Dairy Milk</p>
+ <h6 class="card-title ms-2">Chocolate Bar</h6><p class="card-text ms-3"><strong>Rs330</strong><del class="ms-1">390</del></p>
+</div>
+ <button type="button" class="button">Add me</button>
+</div>
+</div>
+
+    <div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/c3.jpg" class="img0">
+ <p class="ms-3">Cadbury Bournville</p>
+ <h6 class="card-title ms-2">Rich Cocoa 70% Dark Chocolate</h6><p class="card-text ms-3"><strong>Rs174</strong>
+<del>220</del></p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+
+    <div class="col-md-3 py-4">
+ <div class="card h-100">
+ <div class="images-box">
+ <img src="image/c4.jpg" class="img0">
+ <p class="ms-3">Cadbury Dairy Milk</p>
+ <h6 class="card-title ms-2">Chocolate Home Treats Pack</h6><p class="card-text ms-3"><strong>Rs220</strong>
+<del>298</del>
+</p>
+</div>
+<button type="button" class="button">Add me</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- chocolates section end -->
+
+<!-- Top offers section start -->
+<div class="container">
+	<div class="row">
+		<h4 class="py-3">Top Offer</h4>
+		<div class="col-3 py-3">
+			<a href="top1.html"><img src="image/t1.jpg" class="img2"></a>
+
+</div>
+<div class="col-3 py-3">
+	<a href="top2.html"><img src="image/t2.jpg" class="img2"></a>
+</div>
+<div class="col-3 py-3">
+	<a href="top3.html"><img src="image/t3.jpg" class="img2"></a>
+</div>
+<div class="col-3 py-3">
+	<a href="#"><img src="image/t4.jpg" class="img2"></a>
+</div>
+</div>
+</div>
+
+<!-- Top offer section end -->
+
+<!-- Fruit and Vegetable Section -->
+<div class="container">
+	<div class="row">
+		<h4 class="py-3">Fruits and Vegetables</h4>
+		<div class="col-3">
+			<a href="freshvegetable.html"><img src="image/f1.jpg" class="img2"></a>
+				</div>
+
+				<div class="col-3">
+			<a href="freshfruit.html"><img src="image/f2.jpg" class="img2"></a>
+				</div>
+
+				<div class="col-3">
+			<a href="mix.html"><img src="image/f3.jpg" class="img2"></a>
+				</div>
+
+				<div class="col-3">
+			<a href="herbs.html"><img src="image/f4.jpg" class="img2"></a>
+				</div>
+			</div>
+		</div>
+	
+	<!-- Fruit and Vegetable section end -->
+
+
+
+
+<!-- banner #################### -->
+
+
+<div class="container">
+ <div class="row py-4">
+ <div class="col">
+ <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+ <ol class="carousel-indicators" style="list-style: none;">
+ <li data-bs-target="#mycarousel" data-bs-slide-to="0"></li>
+ <li data-bs-target="#mycarousel" data-bs-slide-to="1" class="active"></li>
+ <li data-bs-target="#mycarousel" data-bs-slide-to="2"></li>
+ </ol>
+ <div class="carousel-inner">
+ <div class="carousel-item active" data-bs-interval="1000">
+ <img src="image/b1.jpg" class=" d-block w-100" style="height:300px;">
+ </div>
+ <div class="carousel-item" data-bs-interval="2000">
+ <img src="image/b2.jpg" class="d-block w-100" style="height:300px;"></div>
+ 
+ <div class="carousel-item" data-bs-interval="2000">
+ <img src="image/b3.jpg" class=" d-block w-100" style="height: 300px;"></div>
+ <a href="#mycarousel" class="carousel-control-prev" data-bs-slide="prev">
+ <span class="carousel-control-prev-icon"></span></a>
+ <a href="#mycarousel" class="carousel-control-next" data-bs-slide="next">
+ <span class="carousel-control-next-icon"></span></a>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+
+
+
+<!-- fotter##################### -->
+<div class="container px-5">
+<h6 class="py-2"> Bigbasket – Online Grocery Store</h6>
+
+<p>Did you ever imagine that the freshest of fruits and vegetables, top-quality pulses and food grains, dairy products, and hundreds of branded items could be handpicked and delivered to your home, all at the click of a button? In today's fast-paced world, bigbasket.com, India's pioneering online grocery store, continues to bring a staggering array of over 40,000 products from more than 1,000 brands to the doorsteps of over 10 million satisfied customers. From essential household cleaning products to the latest beauty and makeup trends, bigbasket remains your one-stop shop for daily needs.</p>
+
+
+<p>In these times, we've eliminated the stress associated with shopping for daily essentials. You can now effortlessly order all your household products and groceries online. Plus, the added convenience of finding all your requirements at a single source, coupled with substantial savings, demonstrates that bigbasket, India's largest online supermarket, has transformed the way we shop for groceries. Online grocery shopping has become second nature. And when it comes to freshness, whether it's fruits and vegetables or dairy and meat, we've got you covered! Easily obtain fresh eggs, meat, fish, and more with just a few clicks.</p>
+
+
+<p>We now serve 300+ cities and towns across India and ensure swift delivery times, guaranteeing that all your groceries, snacks and branded foods reach you on time.</p>
+
+
+<p>Slotted Delivery: Choose the most convenient delivery slot to receive your groceries, ranging from early morning delivery for early birds to late-night delivery for those on the night shift. bigbasket caters to every schedule.</p>
+
+
+<p>Instant delivery from bbnow: In response to the ever-increasing demand for convenience, bbnow by bigbasket offers lightning-fast grocery delivery, ensuring that your essentials are at your doorstep within 15-30 minutes. Our quick delivery service has revolutionized the way you shop for groceries. Choose from 5000+ grocery essentials. bbnow is available only in select cities.</p>
+
+
+<p>Whether it's a last-minute dinner party or you simply need something urgently, we've got you covered. This service exemplifies our commitment to providing you with not just the widest range of products but also the fastest and most efficient shopping experience, making bigbasket.com the go-to destination for all your immediate grocery needs.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- fotter  section start -->
+<div class="container-fluid bg-dark">
+
+	<div class="row py-4 px-5">
+		<div class="col-3">
+			<span class="fotter1">Supermart</span><br>
+			<a href="aboutus.html">About us</a><br>
+            <a href="news.html">In News</a><br>
+            <a href="greenbigbasket.html">Green bigbasket</a><br>
+            <a href="privacy.html">Privacy Policy</a><br>
+            <a href="terms.html">Terms and Conditions</a><br>
+            <a href="bbinstant.html">bb Instant</a><br>
+            
+	</div>
+
+	<div class="col-3 border-end ms-5">
+		<span class="fotter1">Help</span><br>
+        <a href="faq.html">FAQs</a><br>
+         <a href="contact.html">Contact Us</a><br>
+         <a href="bbfaq.html">bb Wallet FAQs</a><br>
+         <a href="bbt&c.html">bb Wallet T&Cs</a><br>
+      
+     </div>
+     <div class="col-4 px-5 py-5">
+     	<span class="fotter1"><h1>Super Mart</h1><br>
+     	 <a href="https://www.facebook.com/pages/Bigbasketcom/139311472851666"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/Bigbasket_com" class="ms-3"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/bigbasketcom/" class="ms-3"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://in.pinterest.com/bigbasketcom/" class="ms-3"><i class="fa-brands fa-pinterest" style="color: #c0c1c4;"></i></a>
+</span>
+</div>
+</div>
+</div>
+<div class="container-fluid bg-dark fotter1 border-top">
+Copyright © 2024-2025 Smartmarket Grocery Supplies Pvt Ltd
+	</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<script>
+	let items_1 = document.querySelectorAll('.carousel_1 .carousel-item_1')
+
+		items_1.forEach((el) => {
+			const minPerSlide = 4
+			let next_1 = el.nextElementSibling
+			for (var i=1; i<minPerSlide; i++) {
+				if (!next_1) {
+            // wrap carousel by using first child
+            next_1 = items_1[0]
+        }
+        let cloneChild = next_1.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next_1 = next_1.nextElementSibling
+    }
+})
+</script>
+
+<script>
+	let items_2 = document.querySelectorAll('.carousel_2 .carousel-item_2')
+
+		items_2.forEach((el) => {
+			const minPerSlide = 4
+			let next_2 = el.nextElementSibling
+			for (var i=1; i<minPerSlide; i++) {
+				if (!next_2) {
+            // wrap carousel by using first child
+            next_2 = items_2[0]
+        }
+        let cloneChild = next_2.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next_2 = next_2.nextElementSibling
+    }
+})
+</script>
+
+
+
+</html>
