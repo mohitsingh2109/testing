@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Online Shopping Site for Mobiles</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<link rel="icon" type="image/x-icon" href="flipkart/icon.jpg">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+	
+	<link rel="stylesheet"  href="css/flipkart.css">
+
+	<style type="text/css">
+		@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+	@media screen and (max-width: 600px) {
+  .test{
+   overflow: scroll;
+  }
+}
+	</style>
+
+</head>
+<body>
+
+
+	<!-- top header start -->
+	  <div class="container-fluid">
+	  <div class="row py-3" style="width: 90%; margin: auto;">
+	  <div class="col-md-2"> <img src="flipkart/flipkart.svg">
+	  </div>
+		  <div class="col-md-5">
+	      <form class="form-inline my-2 my-lg-0">
+		  <input class="form-control mr-sm-2" type="search" placeholder="Search for products,Brand and more"
+		  aria-label="Search">
+		  </form>
+	   	  </div>
+      <div class="col-md-1 mt-1">
+      <l class="nav-item dropdown">
+   	  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-regular fa-circle-user fa-lg"></i><span class="ps-2">Login</span></a>
+      <div class="dropdown-menu">
+	  <a class="dropdown-item" href="#">New Customer?</a>
+									
+	  <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="#">
+   	  <i class="fa-regular fa-circle-user"></i>
+	  <span class="ps-2">My Profile</span></a>
+	  <a class="dropdown-item" href="#"><i class="fa-solid fa-compress"></i><span class="ps-2"></span> Flipkart Plus Zone</a>
+	  <a class="dropdown-item" href="#">
+	  <i class="fa-light fa-box"></i><span class="ps-2"> Order</span></a>
+      <a class="dropdown-item" href="#">
+	  <i class="fa-regular fa-heart"></i><span class="ps-2"> Wishlist</span></a>
+	  <a class="dropdown-item" href="#">
+	  <i class="fa-regular fa-gift"></i><span class="ps-2"> Rewards</span></a>
+	  <a class="dropdown-item" href="#">
+	  <i class="fa-regular fa-credit-card"></i><span class="ps-2"> Gift Cards</span></a>
+	  </div>
+	  </l>
+	  </div>
+      <div class="col-md-1 mt-1"> 
+	  <i class="fa-solid fa-cart-shopping fa-lg"></i>
+	  <span class="ps-2"> Cart</span></div>
+	  <div class="col-md-2 mt-1"><i class="fa-solid fa-store fa-lg"></i><span class="ps-2"> Become a Seller</span>
+	  </div>
+      <div class="col-md-1 mt-1">
+      <b class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+      <i class="fa-solid fa-ellipsis-vertical"></i></a>
+      <div class="dropdown-menu" style="margin-right: 200px;">
+      <a class="dropdown-item" href="#"><i class="fa-solid fa-bell"></i>
+      <span class="ps-2">Notification Preferences</span></a>
+      <a class="dropdown-item" href="#"><i class="fa-solid fa-headset"></i>
+      <span class="ps-2">24x7 Customer Care</span></a>
+      <a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-trend-up"></i>
+      <span class="ps-2">Advertice</span></a>
+      <a class="dropdown-item" href="#"><i class="fa-solid fa-download"></i>
+      <span class="ps-2">Download App</span></a>
+      </div>
+      </b>
+      </div>
+      </div>
+      </div>
+
+
+      <!-- top header end-->
+<div class="container bg-light text-center mt-3 pt-2">
+<div class="row bg">
+<div class="d-flex  justify-content-between test">
+<a href=""><div class="p-2"><img src="flipkart/grocery.webp"><br>Grocery</div></a>
+<a href=""><div class="p-2"><img src="flipkart/mobile.webp"><br>Mobiles</div></a>
+
+<div class="p-2">
+<b class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+<img src="flipkart/fashion.png"><br>Fashion</a>
+  
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Men's Top Wear</a>
+<a class="dropdown-item" href="#">Men's Bottom Wear</a>
+<a class="dropdown-item" href="#">Women Ethnic</a>
+<a class="dropdown-item" href="#">Men Footwear</a>
+<a class="dropdown-item" href="#">Watches and Accessories</a>
+<a class="dropdown-item" href="#">Women Western</a>
+<a class="dropdown-item" href="#">Bags,Suitcases & Luggage</a>
+<a class="dropdown-item" href="#">Kids</a>
+<a class="dropdown-item" href="#">Essentials</a>
+<a class="dropdown-item" href="#">Winter</a>
+</div>
+</b> 
+</div>
+
+<div class="p-2">
+<b class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+<img src="flipkart/electronic.png"><br>electronics</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Audio</a>
+<a class="dropdown-item" href="#">Electronics GST store</a>
+<a class="dropdown-item" href="#">Cameras & Accessoires </a>
+<a class="dropdown-item" href="#">Computer Peripherals</a>
+<a class="dropdown-item" href="#">Watches and Accessories</a>
+<a class="dropdown-item" href="#">Gaming</a>
+<a class="dropdown-item" href="#">Health & Personal care</a>
+<a class="dropdown-item" href="#">Laptop Accessories</a>
+<a class="dropdown-item" href="#">Laptop and Desktop</a>
+<a class="dropdown-item" href="#">Mobile Accessory</a>
+<a class="dropdown-item" href="#">Powerbank</a>
+<a class="dropdown-item" href="#">Smart Home Automation</a>
+<a class="dropdown-item" href="#">Smart Wearables</a>
+<a class="dropdown-item" href="#">Storage</a>
+<a class="dropdown-item" href="#">Tablets</a>
+</div>
+</b> 
+</div>
+<div class="p-2">
+<b class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+<img src="flipkart/furniture.jpg"><br>Home & furniture</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Furniture</a>
+<a class="dropdown-item" href="#">Living Room Furniture</a>
+<a class="dropdown-item" href="#">Kitchen & Dinning</a>
+<a class="dropdown-item" href="#">Bedroom Furniture</a>
+<a class="dropdown-item" href="#">Space Saving Furniture</a>
+<a class="dropdown-item" href="#">Home Decor</a>
+<a class="dropdown-item" href="#">Tools & Utility</a>
+<a class="dropdown-item" href="#">Work Space Furniture</a>
+<a class="dropdown-item" href="#">Kids Furniture</a>
+<a class="dropdown-item" href="#">Lightings & Electricals</a>
+<a class="dropdown-item" href="#">Cleaning and Bath</a>
+<a class="dropdown-item" href="#">Pet and Gardening</a>
+</div>
+</b> 
+</div>
+<a href=""><div class="p-2"><img src="flipkart/appliance.jpg"><h6>Appliances</h6></div></a>
+<a href=""><div class="p-2"><img src="flipkart/plane.webp"><h6>Travels</h6></div></a>
+<div class="p-2"><b class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><img src="flipkart/toys.png"><br>Beauty,Toys&More</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Men's Grooming</a>
+<a class="dropdown-item" href="#">Food & Drinks</a>
+<a class="dropdown-item" href="#">Nutrition & Health Care</a>
+<a class="dropdown-item" href="#">Baby Care</a>
+<a class="dropdown-item" href="#">Toys & School Supplies</a>
+<a class="dropdown-item" href="#">Sports & Fitness</a>
+<a class="dropdown-item" href="#">Books</a>
+<a class="dropdown-item" href="#">Music</a>
+<a class="dropdown-item" href="#">Stationary & Office Supplies</a>
+<a class="dropdown-item" href="#">Auto Accessories</a>
+<a class="dropdown-item" href="#">Safety & Hygiene Essentials</a>
+</div>
+</b> 
+</div>
+<div class="p-2">
+<b class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><img src="flipkart/bike.png"><br>Two Wheelers</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Petrol vehicles</a>
+<a class="dropdown-item" href="#">Electric vehicles</a>
+</div>
+</div>
+</b>
+</div>
+</div>
+</div>
+</div>
+
+
+      <!-- banner##################################### -->
+ <div class="container-fluid">
+ <div class="row py-3">
+ <div class="col">
+ <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+ <ol class="carousel-indicators" style="list-style: none;">
+ <li data-bs-target="#mycarousel" data-bs-slide-to="0"></li>
+ <li data-bs-target="#mycarousel" data-bs-slide-to="1" class="active"></li>
+ <li data-bs-target="#mycarousel" data-bs-slide-to="2"></li>
+ </ol>
+ <div class="carousel-inner">
+ <div class="carousel-item active" data-bs-interval="1000">
+ <img src="flipkart/banner.webp" class=" d-block w-100" style="height:300px;">
+ </div>
+ <div class="carousel-item" data-bs-interval="2000">
+ <img src="flipkart/banner1.webp" class="d-block w-100" style="height:300px;"></div>
+ 
+ <div class="carousel-item" data-bs-interval="2000">
+ <img src="flipkart/banner2.webp" class=" d-block w-100" style="height: 300px;"></div>
+ <a href="#mycarousel" class="carousel-control-prev" data-bs-slide="prev">
+ <span class="carousel-control-prev-icon"></span></a>
+ <a href="#mycarousel" class="carousel-control-next" data-bs-slide="next">
+ <span class="carousel-control-next-icon"></span></a>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- electronics carousell starttttttttt 1 -->
+ <div class="container my-3">
+ <h1 class="ms-4 py-3">Best Of Electronics</h1>
+ <div class="row mx-auto my-auto justify-content-center">
+ <div id="recipeCarousel_1" class="carousel carousel_1 slide" data-bs-ride="carousel">
+ <div class="carousel-inner" role="listbox">
+ <div class="carousel-item carousel-item_1 active">
+ <div class="col-md-3">
+ <div class="card">
+ <div class="card-img text-center">
+ <img src="flipkart/moniter.jpg" class="img0">
+ <h5 class="card-title text-center">Moniter</h5><p class="card-text text-center">from Rs 9999</p> </div>
+ </div>
+ </div>
+ </div>
+ <div class="carousel-item carousel-item_1">
+ <div class="col-md-3">
+ <div class="card">
+ <div class="card-img">
+ <img src="flipkart/watch.jpg" class="img0">
+ <h5 class="card-title text-center">Watch</h5>
+ <p class="card-text text-center">from Rs 1649</p>
+ </div>
+ <div class="card-img-overlay"></div>
+ </div>
+ </div>
+ </div>
+ <div class="carousel-item carousel-item_1">
+ <div class="col-md-3">
+ <div class="card">
+ <div class="card-img">
+ <img src="flipkart/a.jpg"  class="img0">
+ <h5 class="card-title text-center">Oneplus Airbuds</h5>
+ <p class="card-text text-center">from Rs 1999</p></div>
+ <div class="card-img-overlay"></div>
+ </div>
+ </div>
+ </div>
+ <div class="carousel-item carousel-item_1">
+ <div class="col-md-3">
+ <div class="card">
+ <div class="card-img">
+ <img src="flipkart/tv.jpg" class="img0">
+									<h5 class="card-title text-center">Smart tv</h5>
+									<p class="card-text text-center">from Rs 13999</p>
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-item_1">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="flipkart/w.jpg" class="img0">
+									<h5 class="card-title text-center">Smart watch</h5>
+									<p class="card-text text-center">from Rs 999</p>
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-item_1">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="flipkart/washingmachine.jpg" class="img0">
+									<h5 class="card-title text-center">Waching machine</h5><p class="card-text text-center">from Rs 8999</p>
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel_1" role="button" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</a>
+				<a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel_1" role="button" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</a>
+			</div>
+		</div>		
+	</div>
+  <!-- carousel enddddddddddddd 1 -->
+
+  <!-- carousel 2 startttttt -->
+
+ <div class="container my-3">
+	  	<h1 class="ms-4 py-3">Explore new Style:</h1>
+			<div class="row mx-auto my-auto justify-content-center">
+				<div id="recipeCarousel_2" class="carousel carousel_2 slide" data-bs-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item carousel-item_2 active">
+							<div class="col-md-3">
+								<div class="card">
+									<div class="card-img">
+										<img src="flipkart/new1.jpg" class="img">
+										<h5 class="card-title text-center"> Lymio men jackets</h5>
+										<p class="card-text text-center">from Rs 799</p>
+									</div>
+									<div class="card-img-overlay"></div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item carousel-item_2">
+							<div class="col-md-3">
+								<div class="card">
+									<div class="card-img">
+										<img src="flipkart/taddy.jpg" class="img">
+										<h5 class="card-title text-center">Taddy bear</h5>
+										<p class="card-text text-center">from Rs 799</p>
+									</div>
+									<div class="card-img-overlay"></div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item carousel-item_2">
+							<div class="col-md-3">
+								<div class="card">
+									<div class="card-img">
+										<img src="flipkart/s.jpg" class="img">
+										<h5 class="card-title text-center">Jorden shoes</h5>
+										<p class="card-text text-center">from Rs 849</p>
+									</div>
+									<div class="card-img-overlay"></div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item carousel-item_2">
+							<div class="col-md-3">
+								<div class="card">
+									<div class="card-img">
+										<img src="flipkart/kurti.jpg" class="img">
+										<h5 class="card-title text-center">Short kurti</h5>
+										<p class="card-text text-center">from Rs 549</p>
+									</div>
+									<div class="card-img-overlay"></div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item carousel-item_2">
+							<div class="col-md-3">
+								<div class="card">
+									<div class="card-img">
+										<img src="flipkart/bedsheet.jpg" class="img">
+										<h5 class="card-title text-center">Bombay dyine</h5>
+										<p class="card-text text-center">from Rs 1999</p>
+									</div>
+									<div class="card-img-overlay"></div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item carousel-item_2">
+							<div class="col-md-3">
+								<div class="card">
+									<div class="card-img">
+										<img src="flipkart/s1.jpg" class="img">
+										<h5 class="card-title text-center">Sport shoes</h5>
+										<p class="card-text text-center">from Rs 999</p>
+									</div>
+									<div class="card-img-overlay"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel_2" role="button" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					</a>
+					<a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel_2" role="button" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					</a>
+				</div>
+			</div>		
+		</div>
+		<!-- carousel 2 end########## -->
+
+		<!-- card start -->
+		<!-- 11111111111111 -->
+	<div class="row">
+	  <div class="col-6"><h2 class="px-4">Winter Jackets</h2>
+	    <div class="row m-3">
+	      <div class="col-4">
+	        <div class="image-box">
+	      <img src="flipkart/new1.jpg" class="card-img box" alt="...">
+	      <div class="card-body">
+	        <h5 class="card-title">Lymio men jackets || bomber jacket for men|</h5>
+	        <p class="card-text">At Rs 659/</p>
+	      </div>
+	    </div>
+	      </div>
+	      <div class="col-4">
+	        <div class="image-box">
+	      <img src="flipkart/new2.jpg" class="card-img-top box" alt="...">
+	      <div class="card-body">
+	        <h5 class="card-title">Lymio Hoodies || Sweatshirt for Unisex</h5>
+	        <p class="card-text">At Rs 899/</p>
+	      </div>
+	    </div>
+	      </div>
+
+	    </div>
+	    <div class="row m-4">
+	      <div class="col-4">
+	        <div class="image-box">
+	      <img src="flipkart/new3.jpg" class="card-img-top box" alt="...">
+	      <div class="card-body">
+	        <h5 class="card-title">Lymio men jackets || bomber jacket for men </h5>
+	        <p class="card-text">At Rs 699/</p>
+	      </div>
+	    </div>
+	      </div>
+	      <div class="col-4">
+	        <div class="image-box">
+	      <img src="flipkart/new4.jpg" class="card-img-top box" alt="...">
+	      <div class="card-body">
+	        <h5 class="card-title">TAGAS Men's Regular Jacket Fit For Casual Wear</h5>
+	        <p class="card-text">At Rs 799/</p>
+	      </div>
+	    </div>
+	      </div>
+
+	    </div>
+	  </div>
+	  <div class="col-6"><h2 class="mx-5">Winter Hoodies</h2>
+	    <div class="row m-4">
+	      <div class="col-4">
+	        <div class="image-box">
+	      <img src="flipkart/hoodie1.jpg" class="card-img-top box" alt="...">
+	      <div class="card-body">
+	        <h5 class="card-title">TAGAS Womens Regular Fit Hoodie ||Casual Wear</h5>
+	        <p class="card-text">At Rs 699/</p>
+	      </div>
+	    </div>
+	      </div>
+	      <div class="col-4">
+	        <div class="image-box">
+	      <img src="flipkart/hoodie2.jpg" class="card-img-top box" alt="...">
+	      <div class="card-body">
+	        <h5 class="card-title">Lymio Hoodies || Sweatshirt for Unisex</h5>
+	        <p class="card-text">At Rs 899/</p>
+	      </div>
+	    </div>
+	      </div>
+
+	    </div>
+	    <div class="row m-4">
+	      <div class="col-4">
+	        <div class="image-box">
+	      <img src="flipkart/hoodie3.jpg" class="card-img-top box" alt="...">
+	      <div class="card-body">
+	        <h5 class="card-title">Imsa Moda Stylish Hoodies ||Sweatshirt Polycotton Hoodies for Running,</h5>
+	        <p class="card-text">At Rs 499/</p>
+	      </div>
+	    </div>
+	      </div>
+	      <div class="col-4">
+	        <div class="image-box">
+	      <img src="flipkart/hoodie4.jpg" class="card-img-top box" alt="...">
+	      <div class="card-body">
+	        <h5 class="card-title">Lymio Hoodies || Sweatshirt for Unisex </h5>
+	        <p class="card-text">At Rs 299/</p>
+	      </div>
+	    </div>
+	      </div>
+
+	    </div>
+	  </div>
+	  </div>
+	</div>
+<!-- card end  -->
+
+
+<!-- fotter 2 start -->
+
+<div class="container-fluid flex-container my-5">
+
+		<h6 class="font"> Top Stories : Brand Directory</h6>
+		<br>
+
+		
+			
+
+			<span class="font"> MOST SEARCHED FOR ON FLIPKART:</span><span class="font1"> Big Billion Days | Nothing Phone 2a Plus | Rakhi | Rakhi Gifts for Brother | Raksha Bandhan Gifts for Sister | Bhaiya Bhabhi Rakhi | Sarees | CMF by Nothing Phone 1 | Pocket Bazaar |
+			<br> Xiaomi 14 CIVI | iPhone 15 | Infinix Note 40 5G | IPhone 15 Plus | iPhone 15 Pro Blue | iPhone 15 Pro Black | vivo X Fold3 Pro | Motorola g04s | iPhone 15 Pro Max Blue | iPhone 15 Pro Max Black Vivo v 100 | OnePlus Nord CE 3 Lite 5G Spoyl Store | SAMSUNG Flip5 | SAMSUNG Fold5 | Flipkart Axis Bank Super Elite Credit card | 5G Mobile Phones | Primebook Laptops | Moto Edge 40 | Grievance Redressal | OPPO Reno7 Pro 5G | iPhone 13 Help Centre | Track Orders | Manage Orders | Return Orders | Gift Cards Store | Flipkart Axis Bank Credit Card | Pay Later
+<br>
+<br>
+
+<span class="font"> MOBILES</span> Redmi 12 5G | Realme 12+5G Motorola G84 | Realme C53 | Infinix Smart 8 | Samsung Galaxy S23 5G | Samsung Galaxy S21 FE 5G Qualcomm | vivo V30 | Samsung Galaxy S24 5G | Samsung Galaxy 524+ SG Phone 12 64GB | iPhone 12 Pro 512GB iPhone 12 128GB | Vivo Y15 | SAMSUNG Galaxy S21 FE 5G | Infinix HOT 301 | Realme 10 Pro 5G | MOTOROLA G62 5G | Nothing Phone | REDMI Note 12 Pro 5G | Infinix SMART 7 Vivo Y12 | Oppo A12 | Motorola 5g Phone | Realme 5g Smartphone Apple 5g Phone | Iqoo 5g Phones | Oneplus 5g Phones | Vivo 5g Phones | Oppo 5g Smart Phones | Oppo F15 | Oppo A31 | Samsung A71 | Samsung A51 Samsung A31 | Phone 11 iPhone 11 Pro 4G Mobile | Nokia Mobile | Samsung Mobile | iphone | Oppo Mobile | Vivo Mobile<br><br>
+
+CAMERA GoPro Action Camera Nikon Camera | Canon Camera | Sony Camera Canon DSLR | Nikon DSLR<br><br>
+
+<span class="font">LAPTOPS Asus</span>
+ROG Ally| MacBook Pro M2 | Premium Laptop ASUS ROG Strix SCAR 16 (2023) Core i9 13th Gen | ASUS ROG Zephyrus M16 (2023) Core 19 13th Gen | ASUS Zenbook 14 OLED (2022) | Realme Book Prime Core 15 11th Gen | Microsoft Surface Go Pentium 12808 | Apple Laptops | Acer Laptops | Lenovo Laptops Dell Laptops | Asus Laptops | HP Laptops | Gaming Laptops | 2 in 1 Laptops | Laptops | Dell latest laptops 2022 | HP latest laptops 2022 Infinix INBook Y1 Plus | SAMSUNG Galaxy Book3 | 12th Gen Intel Core Laptops
+<br><br>
+
+<span class="font"> TVS</span> Nokia TV Panasonic TV | Thomson TV | MIX Pro | Realme TV | Motorola TV | OnePlus TVs | LG TV | TV | Sony TV | Samsung TV | Android Television | Iffalcon Tv | Mi TV
+<br><br>
+
+<span class="font"> LARGE APPLIANCES</span>: Television | Washing Machines | Refrigerators | Air Conditioners | Electric Cookers | Electric Jug(Heater) / Travel Kettles | Induction Cooktops | Inverters/stabilizer Irons/iron Box | Mixer Grinder Juicer | Wet Grinders | Chimneys | Microwave Ovens Vacuum Cleaners Water Purifier | Fan<br><br>
+
+<span class="font"> CLOTHING</span> Sarees Green bridal lehenga | Tops Shoes Sunglasses | Bridal Blouse | Half saree blouse designs | Designer blouses | Blouse designs | Shirts | Cotton saree blouse designs | Tshirts | Jeans | Dresses | One pieces | Groom wedding sherwani | Designer Salwar Suits | Bra Cotton simple blouse designs | Banarasi saree blouse designs | Stylish blouse astin design | Track Pant | Blouse neck designs | Kurtas | Party Dresses | Palazzo Suits | Anarkali | Gowns Cut out dress | Salwar Suits | Kurtis | Designer Sarees | Leggings | Shorts | Georgette Sarees | Ethnic Wear | uppada pattu sarees Blouse back design | Jodhpur pants <br><br>
+
+<span class="font"> FOOTWEAR</span>: Adidas Shoes | Reebok Shoes Nike Shoes | Puma Shoes | Boots | Bata Shoes | Woodland Shoes | Skechers Shoes | Sneakers | Womens Boots | Sports Shoes | Loafers Sandals | Lotto Sports Shoes Casual Shoes Womens Skechers Shoes Asics Sports Shoes | Formal Shoes | School Shoes <br><br>
+
+<span class="font">GROCERIES</span> PhonePe Grocery Voucher | Hand Wash | Soap | Cashew Nuts | Sunflower Oil | Eggs | Toilet Cleaner | Harpic Toilet Cleaner | Dettol Soap | Mustard Oil | Biscuits | Cheese Patanjali Atta | Fortune Oil | Aashirvaad Atta Tea<br><br>
+
+<span class="font"> BEST SELLING ON FLIPKART</span> Headphones | Best Gas Geyser | Kitchen Geyser | Nutri Blenders | Portable Air Cooler | Best Air Cooler Bags | Hitachi Refrigerator 3 Door | Books | Toys | Candles | Helmets | Wall Clocks | Baby Food | Chocolates | Cycles | Calculators | Lipsticks | Mask | Vertiv UPS | Fastrack Watches | Wallets | Earrings | Gold Coins | Realme Pad Mini Handbags | conekt SW2 Smartwatch | Mivi DuoPods a350 | Speaker Cleaner<br><br>
+
+<span class="font"> FURNITURE</span> Fumiture | Sofas | Beds Dining sets | Wardrobes Mattresses | TV Units | Tables | Chairs | Shelves | Bean Bags | Office Chairs | Computer Table | Office Tables | Red Sofa | Wakefit Beds | White Sofa | Wakefiz Mattress | Green Sota Black Sofa Brown Sofa <br><br>
+
+<span class="font"> BGMH</span>: Shampoo | Whey Protein | Homeopathy | Cricket | Cycles Footbalis | Treadmills | Christmas Gifts | Fitness Accessories | Online Guitar | Books Store | Musical Instrument Store | Dabur Chyawanprash | Baidyanath Chyawanprash | Energy Drinks Toys | Milk Drink Mises | Chyawanprash | Indian Flag | Protein Supplements</span>
+			
+</span>
+</p>
+</div>
+
+<!-- fotter 1 enddd   -->
+
+<!-- fotter################## -->
+
+ <div class="container-fluid bg-dark">
+    <div class="row text px-5 py-5">
+
+    
+    <div class="col-sm-2">
+    	<span class="text1">ABOUT</span>
+    	<p class="p">Contact Us<br>
+    	   About Us<br>
+    	   Careers<br>
+    	   Flipkart Stories<br>
+    	   Press<br>
+    	   Corporate Information</p>
+    </div>
+    <div class="col-sm-2">
+    	<span class="text1">GROUP COMPANIES</span>
+    	<p class="p">Myntra<br>
+    	   Cleartrip<br>
+    	   Shopsy<br></p>
+    </div>
+
+    <div class="col-sm-2">
+    	<span class="text1">HELP</span>
+    	<p class="p">Payements<br>
+    	   Shipping<br>
+    	   Cancellation & Returns<br>
+    	   FAQ<br>
+    	   Report Infringement</p>
+    </div>
+
+    <div class="col-sm-2 border-end">
+    	<span class="text1">CONSUMER POLICY</span>
+    	<p class="p">Cancellation & Returns<br>
+    	   Terms Of Use<br>
+    	   Security<br>
+    	   Privacy<br>
+    	   Sitemap<br>
+    	   Grievance Redressal<br>
+    	   EPR Compliance</p>
+    </div>
+
+    <div class="col-sm-2">
+    	<span class="text1">Mail Us:</span>
+    	<p class="p">Flipkart Internet Private Limited,<br>Buildings Alyssa,Begonia & <br>Clove Embassy Tech Village,<br>Outer Ring Road, Devarabeesanahalli Village,<br>Bengaluru 560103,<br>Karnataka,India</p>
+
+    <span class="text1">Social</span><br>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-x-twitter"></i>
+    <i class="fa-brands fa-youtube"></i>
+
+    </div>
+
+   <div class="col-sm-2">
+   	<span class="text1">Registered Office Address:</span>
+   	<p class="p">Flipkart Internet Private Limited,<br>Buildings Alyssa,Begonia & <br>Clove Embassy Tech Village,<br>Outer Ring Road, Devarabeesanahalli Village,<br>Bengaluru 560103,<br>Karnataka,India<br>CIN:U51109KA2012PTC066107<br> Telephone:<a href="#">044-45614700/044-67415800</a></p>
+
+   </div>
+   </div>
+ 
+
+   <div class="row text px-5 py-3 border-top">
+  
+   <div class="col-2">
+   	<span><i class="fa-solid fa-store"></i>Become a seller</span>
+   </div>
+   <div class="col-2">
+   	<span><i class="fa-regular fa-star"></i>Advertise</span>
+   </div>
+   <div class="col-sm-2">
+   	<span><i class="fa-solid fa-gift"></i>Gift Cards</span>
+   </div>
+   <div class="col-sm-2">
+   	<span><i class="fa-solid fa-question"></i>Help Center</span>
+   </div>
+   <div class="col-sm-2">
+   	<span>©️2007-2024 Flipkart.com</span>
+   </div>
+   <div class="col-sm-2">
+   	<img src="flipkart/card.png" class="img1">
+   </div>
+
+
+    </div>
+    </div>
+
+
+
+<!-- fotter 2 end ############## -->
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<script>
+	let items_1 = document.querySelectorAll('.carousel_1 .carousel-item_1')
+
+		items_1.forEach((el) => {
+			const minPerSlide = 4
+			let next_1 = el.nextElementSibling
+			for (var i=1; i<minPerSlide; i++) {
+				if (!next_1) {
+            // wrap carousel by using first child
+            next_1 = items_1[0]
+        }
+        let cloneChild = next_1.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next_1 = next_1.nextElementSibling
+    }
+})
+</script>
+
+<script>
+	let items_2 = document.querySelectorAll('.carousel_2 .carousel-item_2')
+
+		items_2.forEach((el) => {
+			const minPerSlide = 4
+			let next_2 = el.nextElementSibling
+			for (var i=1; i<minPerSlide; i++) {
+				if (!next_2) {
+            // wrap carousel by using first child
+            next_2 = items_2[0]
+        }
+        let cloneChild = next_2.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next_2 = next_2.nextElementSibling
+    }
+})
+</script>
+</html>
